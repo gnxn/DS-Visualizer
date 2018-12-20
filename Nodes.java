@@ -112,6 +112,12 @@ class BST_Nodes {
         r = null;
     }
 
+    BST_Nodes(int v, BST_Nodes l1, BST_Nodes r1){
+        val = v;
+        l = l1;
+        r = r1;
+    }
+
     void setH(int x){
         h = x;
     }
