@@ -36,8 +36,10 @@ class BST{
              if(rt.getL()==null&&rt.getR()==null)return null;
              else // non-leaf nodes, get the min of the right subtree as the new root
              {
-                 int M = minK(rt.getR());
-                 rt = new BST_Nodes(M, rt.getL(), del(M,rt.getR()));
+                 boolean LN = rt.getL() == null;
+                 int M = LN ? rt.getL().getVal() : minK(rt.getR());
+                 rt = LN? new BST_Nodes(M, del(M,rt.getL()),rt.getR()) :
+                          new BST_Nodes(M, rt.getL(), del(M,rt.getR()));
              }
          }
          if(val<rt.getVal()){
