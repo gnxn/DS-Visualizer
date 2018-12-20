@@ -81,10 +81,7 @@ class SegmentTree {
         return hei;
     }
 
-    
-}
-
-
-class BST{
 
 }
+
+

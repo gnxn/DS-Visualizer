@@ -93,7 +93,7 @@ class Seg_Node extends node{
 }
 
 
-class BST_Nodes extends node{
+class BST_Nodes {
     private static int val;
 
     private static boolean bal;
@@ -102,9 +102,14 @@ class BST_Nodes extends node{
 
     private static int sz;
 
-    BST_Nodes(int l,int r, int v){
-        super(l,r);
+    private static BST_Nodes l,r;
+
+    BST_Nodes(int v){
+//        super(l,r);
+//        super();
         val = v;
+        l = null;
+        r = null;
     }
 
     void setH(int x){
@@ -115,10 +120,29 @@ class BST_Nodes extends node{
 
     void setBal(boolean x){bal = x;}
 
+    void setVal(int x){val = x;}
+
+    void setL(BST_Nodes l1){
+        l = l1;
+    }
+
+    void setR(BST_Nodes r1){
+        r = r1;
+    }
+
     int getH(){return h;}
 
     int getSz(){return sz;}
 
     boolean getBal(){return bal;}
 
+    int getVal(){return val;}
+
+    BST_Nodes getL(){
+        return l;
+    }
+
+    BST_Nodes getR(){
+        return r;
+    }
 }
