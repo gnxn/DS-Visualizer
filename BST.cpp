@@ -13,13 +13,14 @@ int BST :: height(){
 }
 
 Node* BST::newNode(Node* l, Node* r, Node* par, int v,int w) {
-    Node* node = (Node *)(malloc(sizeof (Node*)));
+    Node* node = new Node();
 
     node->setLeft(l);
     node->setRight(r);
     node->setParent(par);
     node->setVal(v);
     node->setWeight(w);
+
     return node;
 }
 
@@ -71,7 +72,7 @@ Node* BST :: insert(Node* t, int val, Node* par){
 }
 
 void BST :: insert(int v){
-    root = insert(root, v, root->getParent());
+    root = insert(root, v, null);
 }
 
 Node* BST :: mn(Node* t){
@@ -146,4 +147,57 @@ Node* BST :: remove(Node* t, int val){
 
 void BST :: remove(int val){
     remove(root, val);
+}
+
+void BST :: inorder_print(Node* t){
+
+    if(t){
+        inorder_print(t->getLeft());
+        printf("%d ",t->getVal());
+        inorder_print(t->getRight());
+    }
+}
+
+void BST :: inorder_print(){
+    inorder_print(root);
+}
+
+void BST ::preorder_print(Node *t) {
+    if(t){
+        printf("%d ",t->getVal());
+        preorder_print(t->getLeft());
+        preorder_print(t->getRight());
+    }
+}
+
+
+void BST ::preorder_print() {
+    preorder_print(root);
+}
+
+
+void BST ::postorder_print(Node *t) {
+    if(t){
+        postorder_print(t->getLeft());
+        postorder_print(t->getRight());
+
+        printf("%d ",t->getVal());
+    }
+}
+
+void BST ::postorder_print() {
+    postorder_print(root);
+}
+
+void BST :: destroy(Node* t){
+    if(t){
+        destroy(t->getLeft());
+        destroy(t->getRight());
+
+        free(t);
+    }
+}
+
+void BST :: destroy(){
+    destroy(root);
 }

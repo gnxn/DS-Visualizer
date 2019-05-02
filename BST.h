@@ -21,31 +21,48 @@ class BST {
 private:
     Node* root;
 
-
-public:
-
-    static int height(Node* t);
-
-    int height();
+    int height(Node* t);
 
     bool isBalanced(Node* t);
-
-    bool isBalanced();
 
     Node* newNode(Node* left, Node* right, Node* par, int val, int w);
 
     Node* insert(Node* t, int val, Node* par);
 
-    void insert(int val);
-
     Node* remove(Node* t, int val);
-
-    void remove(int val);
 
     Node* mn(Node* t);
 
     Node* mx(Node* t);
 
+    void inorder_print(Node* t);
+
+    void preorder_print(Node* t);
+
+    void postorder_print(Node* t);
+
+    void destroy(Node *t);
+public:
+
+
+    int height();
+
+
+    bool isBalanced();
+
+
+    void insert(int val);
+
+
+    void remove(int val);
+
+    void inorder_print();
+
+    void preorder_print();
+
+    void postorder_print();
+
+    void destroy();
     BST(){
         root = null;
     }
