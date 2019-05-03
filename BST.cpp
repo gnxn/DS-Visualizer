@@ -4,8 +4,21 @@
 
 #include "BST.h"
 #include "Node.h"
+#include "Utilities.h"
+
+
 int BST :: height(Node* t){
-    return t ? (max(height(t->getRight()),height(t->getLeft())) + 1) : 0;
+    if(t == null){
+        return 0;
+    }
+
+    if(t->getLeft() == null && t->getRight() == null){
+        return 1;
+    }
+
+    int ans = max(height(t->getLeft()),height(t->getRight()));
+
+    return ans + 1;
 }
 
 int BST :: height(){

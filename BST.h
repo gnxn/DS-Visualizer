@@ -7,15 +7,11 @@
 
 #include <iostream>
 #include "Node.h"
-using namespace std;
-
-#define max(a,b) a < b ? b : a
-
-#define min(a,b) a < b ? a : b
 
 #define null nullptr
+using namespace std;
 
-#define abs(a) a < 0 ? -a : a
+
 
 class BST {
 private:
