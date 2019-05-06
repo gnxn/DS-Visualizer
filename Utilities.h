@@ -9,6 +9,8 @@
 //#define min(a,b) a < b ? a : b
 
 #define null nullptr
+#define l(x) x<<1
+#define r(x) x<<1|1
 
 //#define abs(a) a < 0 ? -a : a
 

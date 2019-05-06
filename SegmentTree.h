@@ -6,7 +6,6 @@
 #define DS_VIS_SEGMENTTREE_H
 
 #include "SegNode.h"
-#include <stdlib.h>
 #include <vector>
 #include <limits.h>
 #include <iostream>

@@ -53,11 +53,14 @@ int SegmentTree ::getGCD(int l, int r) {
 }
 
 void SegmentTree ::psUp(int idx) {
-    tree[idx].setGCD(gcd(tree[l(idx)].getGcd(), tree[r(idx)].getGcd()));
+    if(tree[idx].getL() != tree[idx].getR()){
+        tree[idx].setGCD(gcd(tree[l(idx)].getGcd(), tree[r(idx)].getGcd()));
 
-    tree[idx].setMX(max(tree[l(idx)].getMX(), tree[r(idx)].getMX()));
+        tree[idx].setMX(max(tree[l(idx)].getMX(), tree[r(idx)].getMX()));
 
-    tree[idx].setMN(min(tree[l(idx)].getMN(), tree[r(idx)].getMN()));
+        tree[idx].setMN(min(tree[l(idx)].getMN(), tree[r(idx)].getMN()));
+    }
+
 }
 
 void SegmentTree ::bld(int idx, int l, int r) {
