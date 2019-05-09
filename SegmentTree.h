@@ -36,7 +36,7 @@ private:
 
     void print(int idx, int l, int r);
 public:
-    explicit SegmentTree(int n):tree(n*3 + 1){
+    explicit SegmentTree(int n):tree((int) (2 * pow(2.0, ceil(log2((double) n))))){
         N = n;
         bld(1, 1, n);
     }

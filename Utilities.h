@@ -4,6 +4,13 @@
 
 #ifndef DS_VIS_UTILITIES_H
 #define DS_VIS_UTILITIES_H
+
+#include <iostream>
+#include <vector>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <cmath>
 //#define max(a,b) a < b ? b : a
 
 //#define min(a,b) a < b ? a : b
