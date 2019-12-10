@@ -1,39 +1,42 @@
 # DS-Visualizer
 Data Structure Visualizer
 
-AVL Tree, BST, Segment Tree(With lazy propagation) are complete. 
+# Inspiration
 
-Treap
+## Teaching 
+While I was teaching my friends about competitive programming in high school, I always had to use other means to illustrate
+the abstract ideas of a data strucutre. Albeit many were more abstract and harder to visualize, I personally found it to be 
+greatly effective for me to learn with a much more visual stimuli. 
 
-Heap
+## Personal growth
+As a competitive programmer, it is vital that the data structures and algorithms are memorized and thoroughly understood that 
+they can be quickly implemented. Especially with graphs and abstract data structures. 
 
-Graph
+# Data structures 
 
-Future Algorithms to be implemented and animated
+## Trees
+- [x] AVL Tree
+- [x] Binary Search Tree
+- [x] Segment Tree (With lazy propagation)
+- [x] Binary Indexed Trees
+- [ ] Treap
 
+## Graph Algorithms
+- [x] SPFA, Dijkstra's Algorithm
+- [x] Path finding 
+- [x] Lowest Common Ancestor 
+- [x] Prim's Algorithm and Kruskal's algorithm
+- [ ] Heavy Light Decomposition 
+- [ ] Tarjan's Algorithm
 
-Self-balancing Binary Search Trees
+## Dynamic Programming (DP)
+- [x] Knap Sack DP
+- [ ] Bitwise DP
 
-SPFA
+## Other useful algorithms
+- [x] Binary Search
+- [x] Fast Exponentiation 
 
-Dijkstra
+# Compile and use 
 
-Knap Sack DP
-
-Path Finding
-
-Heavy Light Decomposition
-
-Bitwise DP
-
-Fast Exponentiation (Modular)
-
-Line Sweep
-
-LCA (Lowest Common Ancestor)
-
-Prime's 
-
-Kruskal's 
-
-Tarjan 
+Simply clone from the repo and make. Cheers. 
