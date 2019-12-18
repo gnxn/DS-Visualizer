@@ -14,30 +14,31 @@ template<class data>
 class Node{
 private:
     data val;
-    std::shared_ptr<data> left;    
-    std::shared_ptr<data> right;
+    std::shared_ptr<Node<data>> left;    
+    std::shared_ptr<Node<data>> right;
 
 public:
     data getVal(){
         return val;
     }    
 
-    std::shared_ptr<data> const & getLeft(){
+    std::shared_ptr<Node<data>> const & getLeft(){
         return left;
     }
 
-    std::shared_ptr<data> const & getRight(){
+    std::shared_ptr<Node<data>> const & getRight(){
         return right;
     }
 
-    virtual void setLeft(std::shared_ptr<Node<data>> node){
+    void setLeft(std::shared_ptr<Node<data>> node){
         left = node;
     }
-    
-    virtual void setRight(std::shared_ptr<Node<data>> node)
+
+    void setRight(std::shared_ptr<Node<data>> node)
     {
         right = node;
     }
+
 };
 
 #endif
