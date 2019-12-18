@@ -1,5 +1,6 @@
 #include "BST.h"
 
+<<<<<<< HEAD
 using namespace std;
 
 template<class data>
@@ -64,4 +65,6 @@ shared_ptr<BSTNode<data>> removeNode(
     return node;
 }
 
+=======
+>>>>>>> 7492200299a0fdb3a3e35833badb8eff5096b72e
 

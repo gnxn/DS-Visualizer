@@ -38,5 +38,7 @@ they can be quickly implemented. Especially with graphs and abstract data struct
 - [x] Fast Exponentiation 
 
 # Compile and use 
-
-Simply clone from the repo and make. Cheers. 
+Be sure to have environment set up before doing make. 
+```
+source env_setup.sh
+```

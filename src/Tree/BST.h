@@ -1,4 +1,3 @@
-
 #ifndef BST_Tree
 #define BST_Tree
 
@@ -86,6 +85,7 @@ public:
     {
         root = removeNode(root, val);
     }
+
 };
 
 #endif 

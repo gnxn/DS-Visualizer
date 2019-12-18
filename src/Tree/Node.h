@@ -16,7 +16,6 @@ private:
     data val;
     std::shared_ptr<Node<data>> left;    
     std::shared_ptr<Node<data>> right;
-
 public:
     data getVal(){
         return val;
