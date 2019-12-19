@@ -9,9 +9,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: env_setup
-      run: |
-        source env_setup.sh
     - name: make
       run: |
+        source env_setup.sh
         make -j8
