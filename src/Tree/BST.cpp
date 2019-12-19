@@ -1,11 +1,10 @@
 #include "BST.h"
 
+using namespace std;
 namespace DS_VIS
 {
-    
 namespace TREE
 {
-using namespace std;
 
 template<class data>
 shared_ptr<BSTNode<data>> BST<data>::addNode (
