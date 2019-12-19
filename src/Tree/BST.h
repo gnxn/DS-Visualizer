@@ -3,7 +3,8 @@
 
 #include <algorithm>
 #include <vector>
-#include "Node.h"
+
+#include "Tree.h"
 
 namespace DS_VIS {
 
@@ -23,7 +24,7 @@ private:
         data val);
 
 public:
-    BST() : ITree{} {};
+    BST(): root{nullptr}{};
  
 
     std::shared_ptr<BSTNode<data>> bld()

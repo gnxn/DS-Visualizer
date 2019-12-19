@@ -1,5 +1,10 @@
 #include "BST.h"
 
+namespace DS_VIS
+{
+    
+namespace TREE
+{
 using namespace std;
 
 template<class data>
@@ -63,5 +68,8 @@ shared_ptr<BSTNode<data>> removeNode(
     
     return node;
 }
+    
+} // namespace TREE
 
+} // namespace DS_VIS
 

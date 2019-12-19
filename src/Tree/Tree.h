@@ -9,6 +9,12 @@ namespace DS_VIS {
 
 namespace TREE {
 
+enum class infoType
+{
+    PreOrder,
+    InOrder,
+    PostOrder
+};
 
 template<class dataType>
 class ITree {
@@ -27,13 +33,6 @@ private:
     
 public: 
     virtual std::vector<dataType> getInfo(const infoType& info) = 0;
-};
-
-enum class infoType
-{
-    PreOrder,
-    InOrder,
-    PostOrder
 };
 
 } // TREE
