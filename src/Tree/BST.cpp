@@ -8,11 +8,6 @@ namespace DS_VIS
 namespace TREE
 {
 
-namespace DS_VIS
-{
-namespace TREE
-{
-
 template<class data>
 shared_ptr<BSTNode<data>> BST<data>::addNode (
         std::shared_ptr<BSTNode<data>> node, 
