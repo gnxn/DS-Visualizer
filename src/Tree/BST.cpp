@@ -1,8 +1,10 @@
 #include "BST.h"
 
 using namespace std;
+
 namespace DS_VIS
 {
+    
 namespace TREE
 {
 
