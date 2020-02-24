@@ -1,6 +1,6 @@
 
 #Compiler and Linker
-CC          := g++-7
+CC          := g++
 
 #The Target Binary Program
 TARGET      := ds_vis
@@ -16,7 +16,7 @@ DEPEXT      := d
 OBJEXT      := o
 
 #Flags, Libraries and Includes
-CFLAGS      := -fopenmp -Wall -O3 -g
-LIB         := -fopenmp -lm 
+CFLAGS      := -std=c++14 -Werror=vla -MMD -g
+LIB         := -lm 
 INC         := -I$(INCDIR) -I/usr/local/include
 INCDEP      := -I$(INCDIR)
